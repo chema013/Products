@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-4 offset-4">
+        <div class="card card-body">
+            <form (submit)="edit ? updateProduct() : submitProduct()">
+                <div class="form-group my-3">
+                    <input type="text" name="name" [(ngModel)]="product.name" class="form-control" placeholder="Product Name" autofocus>
+                </div>
+
+                <div class="form-group my-3">
+                    <input type="text" name="description" [(ngModel)]="product.description" class="form-control" placeholder="Product Description">
+                </div>
+
+                <div class="form-group my-3">
+                    <input type="text" name="price" [(ngModel)]="product.price" class="form-control" placeholder="Product Price">
+                </div>
+
+                <div class="form-group my-3">
+                    <input type="text" name="imageURL" [(ngModel)]="product.imageURL" class="form-control" placeholder="Product Image">
+                </div>
+
+                <div class="row my-3">
+                    <button class="btn btn-primary btn-block">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
